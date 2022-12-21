@@ -4,13 +4,14 @@ I was recently doing a challenge on HackerRank, where the goal is, given a 3x3 a
 
 ## How do we make a magic square?
 
-A magic square is just a square, for which all rows, columns and diagonals sum up to exactly the same magic value. In a 3x3 square, this magic value is 15. We can find this number by noting that the sum:
+A magic square is just a square, for which all rows, columns and diagonals sum up to exactly the same magic value. In a 3x3 square, this magic value is 15. We can find this number by noting that the sum is:
 
 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45
 
 This means that the average sum of three numbers added up is 45 / 3 = 15
 
-Note: There is actually only "one" 3x3 magic square
+[Note: There is actually only "one" 3x3 magic square](https://math.stackexchange.com/a/3379950/899270)
+
 
 Great, so now we must find all triplet sums which equal 15.
 
@@ -40,11 +41,11 @@ This code returns all triplets:
 
 Lets start with the middle of the magic square, it must appear 4 times:
 
-<img src="https://imgur.com/a/4joZ1uy" style='width: 300px' alt="Getting started" />
+<img src="https://user-images.githubusercontent.com/16985019/208937106-8763df81-e73f-4175-bb64-db7ff46b3a03.png" alt="square_0" style="width: 30%;">
 
 The only number that appears in 4 triplets, is **5** and we can lock it in the middle!!
 
-<img src="https://imgur.com/a/2nu0pS5" style='width: 300px' alt="Getting started" />
+<img src="https://user-images.githubusercontent.com/16985019/208937206-199ec3d3-c069-4b5e-bc33-d498e5f3c93e.png" alt="square_1" style="width: 30%;">
 
 Now for the corners, we need 4 numbers that are seen in 3 triplets:
 
@@ -56,11 +57,11 @@ Now for the corners, we need 4 numbers that are seen in 3 triplets:
 ```
 From now on assembling the magic square is pretty trivial, start with a random insertion and then follow it like a puzzle!
 
-<img src="https://imgur.com/a/g8jVh23" style='width: 600px' alt="Getting started" />
+<img src="https://user-images.githubusercontent.com/16985019/208937244-04f846d6-12c9-424f-bedb-cdfbe1922291.gif" alt="square_x" style="width: 60%; display: inline-block;" data-target="animated-image.originalImage">
 
 So now we get our perfect square!
 
-<img src="https://imgur.com/a/cHcQrzk" style='width: 300px' alt="Finished square!" />
+<img src="https://user-images.githubusercontent.com/16985019/208937346-06d664f4-f0d1-424b-aa28-ff6b14662de5.png" alt="square_3" style="width: 30%;">
 
 As mentioned before, this is the one and only perfect 3x3 magic square, this means that any other magic square is just a rotation or mirror of the original.
 
